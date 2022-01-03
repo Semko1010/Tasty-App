@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.Header {
+  text-align: center;
+  padding: 2% 0 5% 0;
+  color: #FF6E86;
+
+  h1 {
+    padding: 2% 0;
+    font-size: 5vw;
+  }
+
+  input {
+    margin-right: .5%;
+    padding: 1% 5%;
+    border-radius: 5px;
+    border: none;
+    background: #FFAC614D;
+    color: #FF6E86;
+    font-weight: bold;
+
+    &::placeholder {
+      color: #FF6E86;
+      font-size: .8rem;
+      margin-right: -20px;
+    }
+  }
+
+  button {
+    background: #FF6E86;
+    border: none;
+    padding: 1% 2%;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transform: .2s linear;
+
+    &:active {
+      transform: scale(.9);
+    }
+  }
+}
+
+.Category {
+  h1 {
+    padding: 3% 0 1% 14%;
+    color: #FF6E86;
+    font-size: 3.5vw;
+  }
+
+  .CategoryGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 12%;
+    padding: 3% 0 5% 0;
+    gap: 20px;
+
+    .CategoryItem {
+      text-align: center;
+      border-radius: 5px;
+      margin: 0 3%;
+
+      img {
+        width: 70%;
+        padding: 0 0 3% 0;
+      }
+
+      p {
+
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding: 2% 0 0 0;
+      }
+
+      &:nth-of-type(odd) {
+        background: #FFAC61;
+        text-align: center;
+
+      }
+
+      &:nth-of-type(even) {
+        background: #FF6E86;
+      }
+    }
+  }
+}
+
+.SubCategory {
+  h1 {
+    padding: 3% 0 3% 14%;
+    color: #FFAC61;
+    font-size: 3.5vw;
+  }
+
+  .SubCategoryGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+    gap: 30px;
+    padding: 0 0 5% 0;
+
+    .SubCategoryItem {
+      border-radius: 10px;
+      width: 100%;
+      margin: 5%;
+
+      p {
+        padding: 5% 5% 25% 15%;
+        font-weight: bolder;
+        font-size: 3.2vw;
+        height: 14vh;
+      }
+
+      img {
+        width: 80%;
+        margin: 0 0 5% 5%;
+        padding: 5% 0 4% 10%;
+        border-radius: 10px;
+      }
+
+      &:nth-of-type(odd) {
+        background: #FF6E86;
+      }
+
+      &:nth-of-type(even) {
+        background: #FFAC61;
+      }
+    }
+  }
+}
+
+.Search {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .SubCategoryItem {
+    border-radius: 10px;
+    width: 90%;
+    margin: 5%;
+
+    a {
+      p {
+        padding: 5% 5% 18% 15%;
+        font-weight: bolder;
+        font-size: 3.2vw;
+        height: 17vh;
+      }
+    }
+
+    img {
+      width: 80%;
+      margin: 0 0 5% 5%;
+      padding: 5% 0 4% 10%;
+      border-radius: 10px;
+    }
+
+    &:nth-of-type(odd) {
+      background: #FF6E86;
+    }
+
+    &:nth-of-type(even) {
+      background: #FFAC61;
+    }
+  }
+}
+
+.DetailItem {
+  text-align: center;
+  padding: 3% 0 5% 0;
+  background: #FF6E86;
+  margin: 3% 20%;
+  border-radius: 10px;
+  color: white;
+
+  .button {
+    padding: 3% 5%;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+    margin: 5% 0 0 0;
+
+    &:active {
+      transform: scale(.85);
+    }
+
+    a {
+      color: #FF6E86;
+      text-decoration: none;
+    }
+
+  }
+
+  h2 {
+    padding: 2% 0;
+  }
+
+
+  img {
+    width: 90%;
+  }
+
+  .DetailNameIng {
+    text-align: right;
+    margin: 0% 21% 0 0;
+    padding: 1% 0;
+  }
+
+  .DetailFlex {
+    display: flex;
+
+    .DetailLeft {
+      display: inline-block;
+      width: 50%;
+      text-align: left;
+      padding: 2% 0% 0% 5.2%;
+
+      h2 {
+        margin-top: -60px;
+      }
+
+      ul {
+        li {
+          padding: 0 0 5px 0;
+        }
+      }
+
+      h2 {
+        padding: 0 0 5% 0;
+        font-size: 2.2rem;
+      }
+    }
+
+    .DetailRight {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content;
+      list-style-type: none;
+      text-align: left;
+
+
+      .Ingredients {
+        list-style-type: none;
+
+        li {
+          padding: 2px 0 2px 9px;
+        }
+      }
+
+      .strMeasure {
+        p {
+          padding: 2px 0 2px 15px;
+        }
+      }
+
+    }
+  }
+}
+
+.Footer {
+  text-align: center;
+  padding: 0 0 2% 0;
+
+  img {
+    padding: 0 10px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+
+.RandomBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    a {
+      img {
+        width: 40%;
+        padding: 4% 0;
+      }
+    }
+
+    h1 {
+      font-size: 4.9vh;
+    }
+  }
+
+  .Category {
+    h1 {
+      font-size: 2.6vh;
+      padding: 0 0 2% 13%;
+    }
+
+    .CategoryGridContainer {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .SubCategory {
+    h1 {
+      font-size: 4vh;
+      padding: 0 0 2% 10%;
+    }
+
+    .SubCategoryGridContainer {
+      grid-template-columns: 1fr 1fr;
+      margin: 0 5%;
+      justify-items: center;
+
+      .SubCategoryItem {
+        .SubCatName {
+          font-size: 3.3vh;
+          padding: 5% 10% 18% 15%;
+          margin-bottom: -20px;
+        }
+      }
+    }
+  }
+
+  .RandomBox {
+    height: 20vh;
+  }
+
+  .DetailItem {
+    margin: 0 6% 3% 6%;
+
+    .DetailFlex {
+      .DetailLeft {
+        padding: 1% 0 0 5%;
+      }
+
+      .DetailRight {
+        margin-left: 6%;
+
+      }
+    }
+  }
+
+  .Search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .SubCategoryItem {
+      border-radius: 10px;
+      width: 90%;
+      margin: 5%;
+
+      a {
+        p {
+          font-size: 3.2vw;
+          height: 17vh;
+        }
+
+        img {
+          margin: 0 0 5% 5%;
+          padding: 0% 0 4% 10%;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .Header {
+    padding: 3% 0 15% 0;
+
+    h1 {
+      padding: 10% 0;
+      font-size: 4vh;
+    }
+
+    input {
+      padding: 2.5% 7%;
+    }
+
+    button {
+      padding: 2.5% 7%;
+      margin-left: 10px;
+    }
+  }
+
+  .Category {
+    h1 {
+      font-size: 3.1vh;
+    }
+
+    .CategoryGridContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .SubCategory {
+    h1 {
+      font-size: 5vh;
+      padding: 0 0 2% 13%;
+    }
+
+    .SubCategoryGridContainer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      .SubCategoryItem {
+        p {
+          font-size: 4.5vh;
+        }
+      }
+    }
+  }
+
+  .DetailItem {
+    h2 {
+      padding: 0 12% 0 0;
+    }
+
+    .DetailFlex {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+
+      .DetailLeft {
+        width: 70%;
+
+        h2 {
+          margin: 10% 0 0 0%;
+          padding: 10% 0;
+          text-align: center;
+        }
+
+        ul {
+          width: 130%;
+
+          li {
+            margin: 0 0 0 10%;
+          }
+        }
+      }
+    }
+  }
+}
